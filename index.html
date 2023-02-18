@@ -1,25 +1,45 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="js/jquery.min.js"></script>
 
 <style>
 	#imageDiv {
-		margin: 0 auto;
+		margin: 10px auto;
 		text-align: center;
+		width: 100%;
 	}
 	#imageDiv img {
 		max-width: 500px;
+		width: 100%;
+	}
+	#imageName {
+		padding: 5px;
+	}
+	#view {
+		background: #1b5606;
+		padding: 5px 10px;
+		color: #fff;
+		cursor: pointer;
+		border: none;
+		border-radius: 5px;
+		line-height: normal;
+		font-weight: bold;
+	}
+	#view:hover {
+		background: #7a9f6e;
 	}
 </style>
 
 </head>
 	<body>
-		<input type="text" id="imageName" /> 
-		<input type="button" id="view" value="View"/>
-		<div id="imageDiv">
-			
+		<div class="main_area">
+			<input type="text" id="imageName" /> 
+			<input type="button" id="view" value="View"/>
+			<div id="imageDiv">
+				
+			</div>
 		</div>
-
 		<script>
 		$("#view").on("click", function()
 		{
